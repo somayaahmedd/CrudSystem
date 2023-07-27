@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+<a href="" target="_blank"></a>
+
+    <div class="container py-5">
+
+        <form>
+
+            <div class="my-3">
+                <label for="productName">Product Name</label>
+                <input type="text" class="form-control" id="productName">
+            </div>
+
+            <div class="my-3">
+                <label for="productPrice">Product price</label>
+                <input type="number" class="form-control" id="productPrice">
+            </div>
+            <div class="my-3">
+                <label for="productCategory">Product Category</label>
+
+
+                <select class="form-select" name="" id="productCategory">
+
+                    <option value="tv">Tv</option>
+                    <option value="mobile">mobile</option>
+                    <option value="labtop">labtop</option>
+
+                </select>
+            </div>
+
+            <div class="my-3">
+                <label for="productDescription">Product Description</label>
+                <textarea class="form-control" id="productDescription">
+                </textarea>
+            </div>
+
+            <button type="button" id="btn-add" onclick="addProduct()" class="btn btn-outline-info">Add Product</button>
+            <button type="button" id="btn-edit" style="display: none;" onclick="addEdit()" class="btn btn-outline-info">Add edit</button>
+            <button type="button" onclick="clearForm()" class="btn btn-outline-danger">clear form</button>
+        </form>
+
+        <input type="text" id="searchinput" onkeyup="search()" class="form-control w-50 mx-auto" placeholder="Search.........">
+
+
+        <table class="mt-5 table table-striped  table-bordered">
+
+            <thead>
+                <tr>
+                    <th> index </th>
+                    <th> product Name </th>
+                    <th> product Price </th>
+                    <th> product Category </th>
+                    <th> product Description </th>
+                    <th> update </th>
+                    <th> delete </th>
+                </tr>
+            </thead>
+
+            <tbody id="myTable">
+              
+
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
